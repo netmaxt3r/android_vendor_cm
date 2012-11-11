@@ -128,8 +128,7 @@ PRODUCT_PACKAGES += \
     Development \
     LatinIME \
     SpareParts \
-    Superuser \
-    su
+    ssu
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
@@ -144,10 +143,8 @@ PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf \
-    CMWallpapers \
-    Apollo \
-    CMUpdater \
-    CMFileManager
+    CMFileManager \
+    Apollo 
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
@@ -197,7 +194,7 @@ endif
 ifdef CM_BUILDTYPE
     ifdef CM_EXTRAVERSION
         # Force build type to EXPERIMENTAL
-        CM_BUILDTYPE := EXPERIMENTAL
+        # CM_BUILDTYPE := EXPERIMENTAL
         # Add leading dash to CM_EXTRAVERSION
         CM_EXTRAVERSION := -$(CM_EXTRAVERSION)
     endif
